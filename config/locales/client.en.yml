@@ -1,0 +1,480 @@
+# encoding: utf-8
+# This file contains content for the client portion of Discourse, sent out
+# to the Javascript app.
+#
+# To work with us on translations, see:
+# https://www.transifex.com/projects/p/discourse-org/
+#
+# This is a "source" file, which is used by Transifex to get translations for other languages.
+# After this file is changed, it needs to be pushed by a maintainer to Transifex:
+#
+#   tx push -s
+#
+# Read more here: https://meta.discourse.org/t/contribute-a-translation-to-discourse/14882
+#
+# To validate this YAML file after you change it, please paste it into
+# http://yamllint.com/
+
+en:
+  js:
+    share:
+      topic: 'share a link to this discussion'
+
+    topic_admin_menu: "discussion admin actions"
+
+    edit: 'edit the title and civic of this discussion'
+    suggested_topics:
+      title: "Suggested Discussions"
+
+    about:
+      topic_count: "Discussions"
+
+    bookmarked:
+      help:
+        bookmark: "Click to bookmark the first post in this discussion"
+        unbookmark: "Click to remove all bookmarks in this discussion"
+
+    topic_count_latest:
+      one: "{{count}} new or updated discussion."
+      other: "{{count}} new or updated discussions."
+    topic_count_unread:
+      one: "{{count}} unread discussion."
+      other: "{{count}} unread discussions."
+    topic_count_new:
+      one: "{{count}} new discussion."
+      other: "{{count}} new discussions."
+
+    choose_topic:
+      none_found: "No discussions found."
+      title:
+        search: "Search for a discussion by name, url or id:"
+        placeholder: "type the discussion title here"
+
+    user_action:
+      user_posted_topic: "<a href='{{userUrl}}'>{{user}}</a> posted <a href='{{topicUrl}}'>the discussion</a>"
+      you_posted_topic: "<a href='{{userUrl}}'>You</a> posted <a href='{{topicUrl}}'>the discussion</a>"
+      user_replied_to_topic: "<a href='{{userUrl}}'>{{user}}</a> replied to <a href='{{topicUrl}}'>the discussion</a>"
+      you_replied_to_topic: "<a href='{{userUrl}}'>You</a> replied to <a href='{{topicUrl}}'>the discussion</a>"
+
+    user_action_groups:
+      "4": "Discussions"
+
+    categories:
+      all: "all civics"
+      category: "Civic"
+      topics: "Discussions"
+      subcategories: "Sub-civics"
+      topic_stats: "The number of new discussions."
+      topic_stat_sentence:
+        one: "%{count} new discussion in the past %{unit}."
+        other: "%{count} new discussions in the past %{unit}."
+
+    ip_lookup:
+      topics_entered: "discussions entered"
+
+    user:
+      mailing_list_mode: "Send me an email for every new post (unless I mute the discussion or civic)"
+      watched_categories_instructions: "You will automatically watch all new discussions in these civics. You will be notified of all new posts and discussions, plus the count of unread and new posts will also appear next to the discussion's listing."
+      tracked_categories_instructions: "You will automatically track all new discussions in these civics. A count of unread and new posts will appear next to the discussion."
+      muted_categories_instructions: "You will not be notified about new discussions in these civics, and they will not appear on your unread tab."
+
+      categories_settings: "Civics"
+
+      new_topic_duration:
+        label: "Consider discussions new when"
+      auto_track_topics: "Automatically track discussions I enter"
+      invited:
+        topics_entered: "Discussions Viewed"
+
+      stream:
+        the_topic: "the discussion"
+
+    too_few_topics_notice: "Create at least 5 public discussions and %{posts} public posts to get discussion started. New users cannot earn trust levels unless there's content for them to read. This message appears only to staff."
+
+    year_desc: 'discussions created in the last 365 days'
+    month_desc: 'discussions created in the last 30 days'
+    week_desc: 'discussions created in the last 7 days'
+
+    summary:
+      enabled_description: "You're viewing a summary of this discussion: the most interesting posts as determined by the community."
+      enable: 'Summarize This Discussions'
+
+    deleted_filter:
+      enabled_description: "This discussion contains deleted posts, which have been hidden. "
+      disabled_description: "Deleted posts in the discussion are shown."
+
+    composer:
+      posting_not_on_topic: "Which discussion do you want to reply to?"
+      similar_topics: "Your discussion is similar to..."
+
+      error:
+        category_missing: "You must choose a civic"
+
+      reply_original: "Reply on Original Discussion"
+      create_topic: "New Discussion"
+
+      title_placeholder: "What is this discussion about in one brief sentence?"
+
+      admin_options_title: "Optional staff settings for this discussion"
+      auto_close:
+        label: "Auto-close discussion time:"
+        based_on_last_post: "Don't close until the last post in the discussion is at least this old."
+
+    notifications:
+      title: "notifications of @name mentions, replies to your posts and discussions, private messages, etc"
+
+    search:
+      title: "search discussions, posts, users, or civics"
+
+      context:
+        category: "Search the \"{{category}}\" civic"
+        topic: "Search this discussion"
+
+    site_map: "go to another discussion list or civic"
+
+    topics:
+      bulk:
+        delete: "Delete Discussions"
+        dismiss_posts_tooltip: "Clear unread counts on these discussions but continue to show them on my unread list when new posts are made"
+        dismiss_topics: "Dismiss Discussions"
+        dismiss_topics_tooltip: "Stop showing these discussions in my unread list when new posts are made"
+        toggle: "toggle bulk selection of discussions"
+        change_category: "Change Civic"
+        close_topics: "Close Discussions"
+        archive_topics: "Archive Discussions"
+        choose_new_category: "Choose the new civic for the discussions:"
+        selected:
+          one: "You have selected <b>1</b> discussion."
+          other: "You have selected <b>{{count}}</b> discussions."
+      none:
+        unread: "You have no unread discussions."
+        new: "You have no new discussions."
+        read: "You haven't read any discussions yet."
+        posted: "You haven't posted in any discussions yet."
+        latest: "There are no latest discussions."
+        hot: "There are no hot discussions."
+        bookmarks: "You have no bookmarked discussions yet."
+        category: "There are no {{category}} discussions."
+        top: "There are no top discussions."
+        educate:
+          new: '<p>Your new discussions appear here.</p><p>By default, discussions are considered new and will show a <span class="badge new-topic badge-notification" style="vertical-align:middle;line-height:inherit;">new</span> indicator if they were created in the last 2 days.</p><p>You can change this in your <a href="%{userPrefsUrl}">preferences</a>.</p>'
+          unread: '<p>Your unread discussions appear here.</p><p>By default, discussions are considered unread and will show unread counts <span class="badge new-posts badge-notification">1</span> if you:</p><ul><li>Created the discussion</li><li>Replied to the discussion</li><li>Read the discussion for more than 4 minutes</li></ul><p>Or if you have explicitly set the discussion to Tracked or Watched via the notification control at the bottom of each discussion.</p><p>You can change this in your <a href="%{userPrefsUrl}">preferences</a>.</p>'
+      bottom:
+        latest: "There are no more latest discussions."
+        hot: "There are no more hot discussions."
+        posted: "There are no more posted discussions."
+        read: "There are no more read discussions."
+        new: "There are no more new discussions."
+        unread: "There are no more unread discussions."
+        category: "There are no more {{category}} discussions."
+        top: "There are no more top discussions."
+        bookmarks: "There are no more bookmarked discussions."
+
+    topic:
+      filter_to: "{{post_count}} posts in discussion"
+      create: 'New Discussion'
+      create_long: 'Create a new Discussion'
+      list: 'Discussions'
+      new: 'new discussion'
+      unread: 'unread'
+      new_topics:
+        one: '1 new discussion'
+        other: '{{count}} new discussions'
+      unread_topics:
+        one: '1 unread discussion'
+        other: '{{count}} unread discussions'
+      title: 'Discussion'
+      invalid_access:
+        title: "Discussion is private"
+        description: "Sorry, you don't have access to that discussion!"
+        login_required: "You need to log in to see that discussion."
+      server_error:
+        title: "Discussion failed to load"
+        description: "Sorry, we couldn't load that discussion, possibly due to a connection problem. Please try again. If the problem persists, let us know."
+      not_found:
+        title: "Discussion not found"
+        description: "Sorry, we couldn't find that discussion. Perhaps it was removed by a moderator?"
+      total_unread_posts:
+        one: "you have 1 unread post in this discussion"
+        other: "you have {{count}} unread posts in this discussion"
+      unread_posts:
+        one: "you have 1 unread old post in this discussion"
+        other: "you have {{count}} unread old posts in this discussion"
+      new_posts:
+        one: "there is 1 new post in this discussion since you last read it"
+        other: "there are {{count}} new posts in this discussion since you last read it"
+      likes:
+        one: "there is 1 like in this discussion"
+        other: "there are {{count}} likes in this discussion"
+      back_to_list: "Back to Discussion List"
+      options: "Discussion Options"
+      show_links: "show links within this discussion"
+      toggle_information: "toggle discussion details"
+      read_more_in_category: "Want to read more? Browse other discussions in {{catLink}} or {{latestLink}}."
+
+      # keys ending with _MF use message format, see /spec/components/js_local_helper_spec.rb for samples
+      read_more_MF: "There { UNREAD, plural, =0 {} one { is <a href='/unread'>1 unread</a> } other { are <a href='/unread'># unread</a> } } { NEW, plural, =0 {} one { {BOTH, select, true{and } false {is } other{}} <a href='/new'>1 new</a> discussion} other { {BOTH, select, true{and } false {are } other{}} <a href='/new'># new</a> discussions} } remaining, or {CATEGORY, select, true {browse other discussions in {catLink}} false {{latestLink}} other {}}."
+
+      browse_all_categories: Browse all civics
+
+      view_latest_topics: view latest discussions
+      suggest_create_topic: Why not create a discussion?
+      deleted: "The discussion has been deleted"
+
+      auto_close_notice: "This discussion will automatically close %{timeLeft}."
+      auto_close_notice_based_on_last_post: "This discussion will close %{duration} after the last reply."
+      auto_close_remove: "Don't Auto-Close This Discussion"
+
+      progress:
+        title: discussion progress
+
+      notifications:
+        reasons:
+          "3_6": 'You will receive notifications because you are watching this civic.'
+          "3_5": 'You will receive notifications because you started watching this discussion automatically.'
+          "3_2": 'You will receive notifications because you are watching this discussion.'
+          "3_1": 'You will receive notifications because you created this discussion.'
+          "3": 'You will receive notifications because you are watching this discussion.'
+          "2_8": 'You will receive notifications because you are tracking this civic.'
+          "2_4": 'You will receive notifications because you posted a reply to this discussion.'
+          "2_2": 'You will receive notifications because you are tracking this discussion.'
+          "2": 'You will receive notifications because you <a href="/users/{{username}}/preferences">read this discussion</a>.'
+          "0_7": 'You are ignoring all notifications in this civic.'
+          "0_2": 'You are ignoring all notifications on this discussion.'
+          "0": 'You are ignoring all notifications on this discussion.'
+        watching_pm:
+          description: "You will be notified of every new post in this private message. A count of unread and new posts will also appear next to the discussion."
+        watching:
+          description: "You will be notified of every new post in this discussion. A count of unread and new posts will also appear next to the discussion."
+        tracking:
+          title: "Tracking"
+          description: "A count of unread and new posts will appear next to the discussion. You will be notified if someone mentions your @name or replies to your post. "
+        muted:
+          title: "Muted"
+          description: "You will never be notified of anything about this discussion, and it will not appear on your unread tab."
+
+      actions:
+        recover: "Un-Delete Discussion"
+        delete: "Delete Discussion"
+        open: "Open Discussion"
+        close: "Close Discussion"
+        make_banner: "Banner Discussion"
+        remove_banner: "Remove Banner Discussion"
+        unpin: "Un-Pin Discussion"
+        pin: "Pin Discussion"
+        pin_globally: "Pin Discussion Globally"
+        unarchive: "Unarchive Discussion"
+        archive: "Archive Discussion"
+
+      reply:
+        help: 'begin composing a reply to this discussion'
+
+      clear_pin:
+        help: "Clear the pinned status of this discussion so it no longer appears at the top of your discussion list"
+
+      share:
+        help: 'share a link to this discussion'
+
+      flag_topic:
+        help: 'privately flag this discussion for attention or send a private notification about it'
+        success_message: 'You successfully flagged this discussion.'
+
+      invite_reply:
+        help: 'send invitations to friends so they can reply to this discussion with a single click'
+        to_topic: "We'll send a brief email allowing your friend to immediately join and reply to this discussion by clicking a link, no login required."
+
+      split_topic:
+        title: "Move to New Discussion"
+        action: "move to new discussion"
+        topic_name: "New Discussion Name"
+        error: "There was an error moving posts to the new discussion."
+        instructions:
+          one: "You are about to create a new discussion and populate it with the post you've selected."
+          other: "You are about to create a new discussion and populate it with the <b>{{count}}</b> posts you've selected."
+      merge_topic:
+        title: "Move to Existing Discussion"
+        action: "move to existing discussion"
+        error: "There was an error moving posts into that discussion."
+        instructions:
+          one: "Please choose the discussion you'd like to move that post to."
+          other: "Please choose the discussion you'd like to move those <b>{{count}}</b> posts to."
+
+    post:
+      reply_as_new_topic: "Reply as linked discussion"
+      continue_discussion: "Continuing the discussion from {{postLink}}:"
+
+    category:
+      none: '(no civic)'
+      choose: 'Select a civic'
+      view: 'View Discussions in Civic'
+      delete: 'Delete Civic'
+      create: 'New Civic'
+      save: 'Save Civic'
+      slug: 'Civic Slug'
+      creation_error: There has been an error during the creation of the civic.
+      save_error: There was an error saving the civic.
+      name: "Civic Name"
+      topic: "civic discussion"
+      logo: "Civic Logo Image"
+      background_image: "Civic Background Image"
+      delete_confirm: "Are you sure you want to delete this civic?"
+      delete_error: "There was an error deleting the civic."
+      list: "List Civics"
+      no_description: "Please add a description for this civic."
+      already_used: 'This color has been used by another civic'
+      auto_close_label: "Auto-close discussions after:"
+      email_in_disabled: "Posting new discussions via email is disabled in the Site Settings. To enable posting new discussions via email, "
+      allow_badges_label: "Allow badges to be awarded in this civic"
+      position_disabled: "Civics will be displayed in order of activity. To control the order of civics in lists, "
+      position_disabled_click: 'enable the "fixed civic positions" setting.'
+      parent: "Parent Civic"
+      notifications:
+        watching:
+          description: "You will automatically watch all new discussions in these civics. You will be notified of all new posts and discussions, plus the count of unread and new posts will also appear next to the discussion."
+        tracking:
+          description: "You will automatically track all new discussions in these civics. A count of unread and new posts will appear next to the discussion."
+        muted:
+          description: "You will not be notified of anything about new discussions in these civics, and they will not appear on your unread tab."
+
+    flagging:
+      delete_confirm: "You are about to delete <b>%{posts}</b> posts and <b>%{topics}</b> discussions from this user, remove their account, block signups from their IP address <b>%{ip_address}</b>, and add their email address <b>%{email}</b> to a permanent block list. Are you sure this user is really a spammer?"
+
+    flagging_topic:
+      action: "Flag Discussion"
+
+    topic_map:
+      title: "Discussion Summary"
+    topic_statuses:
+      bookmarked:
+        help: "You bookmarked this discussion"
+      locked:
+        help: "This discussion is closed; it no longer accepts new replies"
+      archived:
+        help: "This discussion is archived; it no longer accepts new replies"
+      unpinned:
+        help: "This discussion is unpinned for you; it will display in regular order"
+      pinned_globally:
+        help: "This discussion is pinned globally; it will display at the top of all lists"
+      pinned:
+        help: "This discussion is pinned for you; it will display at the top of its civic"
+      archived:
+        help: "This discussion is archived; it is frozen and cannot be changed"
+      invisible:
+        help: "This discussion is unlisted; it will not be displayed in discussion lists, and can only be accessed via a direct link"
+
+    posts_long: "there are {{number}} posts in this discussion"
+    posts_likes_MF: |
+      This discussion has {count, plural, one {1 reply} other {# replies}} {ratio, select,
+        low {with a high like to post ratio}
+        med {with a very high like to post ratio}
+        high {with an extremely high like to post ratio}
+        other {}}
+    views_long: "this discussion has been viewed {{number}} times"
+    likes_long: "there are {{number}} likes in this discussion"
+    category_title: "Civic"
+    categories_list: "Civics List"
+
+    filters:
+      with_topics: "%{filter} discussions"
+      with_category: "%{filter} %{category} discussions"
+      latest:
+        help: "discussions with recent posts"
+      hot:
+        help: "a selection of the hottest discussions"
+      read:
+        help: "discussions you've read, in the order that you last read them"
+      categories:
+        title: "Civics"
+        title_in: "Civic - {{categoryName}}"
+        help: "all discussions grouped by civic"
+      unread:
+        help: "discussions you are currently watching or tracking with unread posts"
+      new:
+        help: "discussions created in the last few days"
+      posted:
+        help: "discussions you have posted in"
+      bookmarks:
+        help: "discussions you have bookmarked"
+      category:
+        help: "latest discussions in the {{categoryName}} civic"
+      top:
+        help: "the most active discussions in the last year, month, week or day"
+        other_periods: "see more top discussions"
+
+  # This section is exported to the javascript for i18n in the admin section
+  admin_js:
+    type_to_filter: "type to filter..."
+
+    admin:
+      flags:
+        delete_post_defer_flag_title: "Delete post; if the first post, delete the discussion"
+        delete_post_agree_flag_title: "Delete post; if the first post, delete the discussion"
+        delete_spammer_title: "Remove the user and all posts and discussions by this user."
+        clear_topic_flags_title: "The discussion has been investigated and issues have been resolved. Click Done to remove the flags."
+
+        topic_flagged: "This <strong>discussion</strong> has been flagged."
+        visit_topic: "Visit the discussion to take action"
+
+      api:
+        info_html: "Your API key will allow you to create and update discussions using JSON calls."
+
+      customize:
+          highlight:
+            description: 'The background color of highlighted elements on the page, such as posts and discussions.'
+          danger:
+            description: 'Highlight color for actions like deleting posts and discussions.'
+
+      logs:
+        topic_id: "Discussion ID"
+        staff_actions:
+          actions:
+            delete_topic: "delete discussion"
+
+      user:
+        delete_all_posts_confirm: "You are about to delete %{posts} posts and %{topics} discussions. Are you sure?"
+        private_topics_count: Private Discussions
+        topics_entered: Discussions Viewed
+        block_explanation: "A blocked user can't post or start discussions."
+        tl3_requirements:
+          topics_replied_to: "Discussions Replied To"
+          topics_viewed: "Discussions Viewed"
+          topics_viewed_all_time: "Discussions Viewed (all time)"
+
+      badges:
+        reason_help: (A link to a post or discussion)
+
+    keyboard_shortcuts_help:
+      jump_to:
+        categories: '<b>g</b>, <b>c</b> Civics'
+      navigation:
+        open: '<b>o</b> or <b>Enter</b> Open selected discussion'
+      application:
+        create: '<b>c</b> Create a new discussion'
+        show_incoming_updated_topics: '<b>.</b> Show updated discussions'
+        dismiss_topics: '<b>x</b>, <b>t</b> Dismiss Discussions'
+      actions:
+        bookmark_topic: '<b>f</b> Toggle bookmark discussion'
+        pin_unpin_topic: '<b>shift</b>+<b>p</b> Pin/Unpin discussion'
+        share_topic: '<b>shift</b>+<b>s</b> Share discussion'
+        reply_as_new_topic: '<b>t</b> Reply as linked discussion'
+        reply_topic: '<b>shift</b>+<b>r</b> Reply to discussion'
+        mark_muted: '<b>m</b>, <b>m</b> Mute discussion'
+        mark_regular: '<b>m</b>, <b>r</b> Regular (default) discussion'
+        mark_tracking: '<b>m</b>, <b>t</b> Track discussion'
+        mark_watching: '<b>m</b>, <b>w</b> Watch discussion'
+
+    badges:
+      badge:
+        nice_topic:
+          name: Nice Discussion
+          description: Received 10 likes on a discussion. This badge can be granted multiple times
+        good_topic:
+          name: Good Discussion
+          description: Received 25 likes on a discussion. This badge can be granted multiple times
+        great_topic:
+          name: Great Discussion
+          description: Received 50 likes on a discussion. This badge can be granted multiple times
+        first_link:
+          description: Added an internal link to another discussion
+        reader:
+          description: Read every post in a discussion with more than 100 posts
