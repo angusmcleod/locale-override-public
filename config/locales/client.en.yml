@@ -111,7 +111,7 @@ en:
         category_missing: "You must choose a civic"
 
       reply_original: "Reply on Original Discussion"
-      create_topic: "New Discussion"
+      create_topic: "Post"
 
       title_placeholder: "What is this discussion about in one brief sentence?"
 
@@ -172,8 +172,8 @@ en:
 
     topic:
       filter_to: "{{post_count}} posts in discussion"
-      create: 'New Discussion'
-      create_long: 'Create a new Discussion'
+      create: 'Post'
+      create_long: 'Start a new discussion:'
       list: 'Discussions'
       new: 'new discussion'
       unread: 'unread'
@@ -284,9 +284,9 @@ en:
         to_topic: "We'll send a brief email allowing your friend to immediately join and reply to this discussion by clicking a link, no login required."
 
       split_topic:
-        title: "Move to New Discussion"
+        title: "Move to a new discussion"
         action: "move to new discussion"
-        topic_name: "New Discussion Name"
+        topic_name: "New discussion name"
         error: "There was an error moving posts to the new discussion."
         instructions:
           one: "You are about to create a new discussion and populate it with the post you've selected."
