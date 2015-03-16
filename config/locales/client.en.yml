@@ -173,7 +173,7 @@ en:
     topic:
       filter_to: "{{post_count}} posts in discussion"
       create: 'Post'
-      create_long: 'Start a new discussion:'
+      create_long: 'Start a new discussion'
       list: 'Discussions'
       new: 'new discussion'
       unread: 'unread'
