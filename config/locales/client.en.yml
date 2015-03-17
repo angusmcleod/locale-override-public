@@ -113,7 +113,8 @@ en:
       reply_original: "Reply on Original Discussion"
       create_topic: "Post"
 
-      title_placeholder: "What is this discussion about in one brief sentence?"
+      title_placeholder: "Give your post a title!"
+      reply_placeholder: "What's this about?"
 
       admin_options_title: "Optional staff settings for this discussion"
       auto_close:
