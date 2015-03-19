@@ -442,6 +442,10 @@ en:
           topics_viewed: "Discussions Viewed"
           topics_viewed_all_time: "Discussions Viewed (all time)"
 
+      site_settings:
+        categories:
+          sidebar_settings: "Sidebars Settings"
+
       badges:
         reason_help: (A link to a post or discussion)
 

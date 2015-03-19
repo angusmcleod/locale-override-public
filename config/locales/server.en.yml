@@ -303,6 +303,10 @@ en:
     embed_category: "Civic of embedded discussions."
     show_create_topics_notice: "If the site has fewer than 5 public discussions, show a notice asking admins to create some discussions."
 
+    left_sidebar_content: "html content for the left sidebar"
+    right_sidebar_content: "html content for the right sidebar"
+    active: "Show sidebars"
+
   search:
     types:
       category: 'Civics'
