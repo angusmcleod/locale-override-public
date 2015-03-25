@@ -268,7 +268,7 @@ en:
         archive: "Archive Discussion"
 
       reply:
-        title: 'Reply to discussion'
+        title: 'Reply'
         help: 'begin composing a reply to this discussion'
 
       clear_pin:
